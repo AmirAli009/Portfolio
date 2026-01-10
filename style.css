@@ -81,6 +81,84 @@ h3 {
     margin-bottom: 20px;
     color: #22d3d4;
 }
+/* Floating Resume Button - Left Side & Bigger */
+.resume-float-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+
+  padding: 20px 35px;          /* Bigger button */
+  font-size: 20px;             /* Larger text */
+  font-weight: 700;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #38bdf8, #6366f1); /* Attractive gradient */
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+  z-index: 10000;
+
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.resume-float-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.7);
+}
+
+/* Floating Resume Viewer */
+.resume-float-box {
+  position: fixed;
+  bottom: 90px;
+  left: 20px;                  /* Matches button left side */
+  width: 440px;                /* Slightly bigger viewer */
+  height: 580px;
+  background: #020617;
+  border-radius: 16px;
+  display: none;
+  box-shadow: 0 12px 45px rgba(0,0,0,0.6);
+  overflow: hidden;
+  z-index: 10000;
+}
+
+/* Viewer Header */
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background: #020617;
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Download button */
+.download-btn {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Close button */
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* PDF Viewer */
+.resume-float-box iframe {
+  width: 100%;
+  height: calc(100% - 45px);
+  border: none;
+}
+
 
 /* CARDS */
 .card a {
