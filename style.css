@@ -112,29 +112,32 @@ h3 {
 /* Floating Resume Viewer */
 .resume-float-box {
   position: fixed;
-  bottom: 90px;
-  left: 20px;                  /* Matches button left side */
-  width: 440px;                /* Slightly bigger viewer */
-  height: 580px;
-  background: #020617;
-  border-radius: 16px;
-  display: none;
-  box-shadow: 0 12px 45px rgba(0,0,0,0.6);
-  overflow: hidden;
-  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 85vh;
+  background: #111;
+  border-radius: 10px;
+  z-index: 9999;
+  display: none; /* toggle with JS */
 }
 
-/* Viewer Header */
 .resume-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 12px 15px;
-  background: #020617;
-  color: #38bdf8;
-  font-size: 14px;
-  font-weight: 600;
+  align-items: center;
+  padding: 10px 15px;
+  background: #1a1a1a;
+  color: #fff;
 }
+
+.resume-float-box iframe {
+  width: 100%;
+  height: calc(100% - 50px);
+  border: none;
+}
+
 
 /* Download button */
 .download-btn {
