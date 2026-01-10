@@ -21,13 +21,13 @@
 
     <p>
         I develop <strong>high-performance games and applications</strong> for
-        <strong>Mobile, PC, and WebGL</strong> with <strong>5+ years of experience</strong>,
+        <strong>Mobile, PC, and WebGL</strong> with <strong>5 years of experience</strong>,
         collaborating with <strong>indie developers, startups, and game studios</strong>.
     </p>
 
     <p>
         I can handle a <strong>complete project end-to-end</strong> or work on a
-        <strong>specific part of development</strong> — including gameplay systems,
+        <strong>specific part of development</strong> including gameplay systems,
         multiplayer, UI/UX design, and 3D modeling. I also prepare and
         <strong>publish apps and games on the Google Play Store</strong>, delivering
         optimized, tested, and production-ready builds using
@@ -52,10 +52,6 @@
     <div class="card">
         <h3>Multiplayer Domino Game</h3>
         <p>Unity + Photon | Online Multiplayer</p>
-        <a href="https://github.com/AmirAli009"
-   target="_blank"
-   rel="noopener noreferrer">
-   GitHub
 </a>
     <div style="display: flex; align-items: center; gap: 40px;">
 
@@ -64,18 +60,21 @@
     <p>
       Domino is a classic tile-based strategy game where players match numbered cards end-to-end to score points and outplay their opponents. It combines skill, strategy, and quick thinking, making it a fun and competitive game for all ages.
     </p>
+    <section class="resume-section">
+</section>
+
   </div>
 
   <!-- Video on the right -->
   <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/-iWLEjVoocA?mute=1"
-    title="Gameplay Video"
-    frameborder="0"
-    allow="autoplay; encrypted-media; fullscreen"
-    allowfullscreen>
-  </iframe>
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/-iWLEjVoocA?autoplay=1&mute=1&loop=1&playlist=-iWLEjVoocA"
+  title="Gameplay Video"
+  frameborder="0"
+  allow="autoplay; encrypted-media; fullscreen"
+  allowfullscreen>
+</iframe>
 </div>
     </div>
     <hr>
@@ -102,6 +101,28 @@
         <span>Game Optimization</span>
     </div>
 </section>
+<!-- Floating Resume Button -->
+<button class="resume-float-btn" onclick="toggleResume()">📄 Resume</button>
+
+<!-- Floating Resume Viewer -->
+<div id="resumeBox" class="resume-float-box">
+  <div class="resume-header">
+    <span>My Resume</span>
+    <a href="assets/Amir_Ali_Resume.pdf" download class="download-btn">⬇ Download</a>
+    <button class="close-btn" onclick="toggleResume()">✕</button>
+  </div>
+
+  <iframe src="assets/Amir ali resume.pdf"></iframe>
+</div>
+
+<!-- JavaScript -->
+<script>
+function toggleResume() {
+  const box = document.getElementById("resumeBox");
+  box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
 <div class="floating-box">
   <h4>Message Us</h4>
   <input type="text" placeholder="Your Name">
